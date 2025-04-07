@@ -4,9 +4,9 @@
 
 .content {
     display: flex;
-    align-items: stretch; 
+    align-items: stretch;
     justify-content: space-between;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .text-content,
@@ -23,6 +23,30 @@
     margin-top: 20px;
 }
 
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.button a{
+    background-color: var(--beige);
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.button a:hover {
+    background-color: var(--vert);
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
 .main-image {
     width: 100%;
     height: 100%;
@@ -32,10 +56,137 @@
     border-radius: 100%;
 }
 
-.round{
+.round {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.round1 {
     background-color: var(--vert);
+    width: 25px;
+    height: 25px;
+    border-radius: 100% !important;
+    z-index: 10;
+}
+.round2 {
+    background-color: var(--beige);
     width: 20px;
     height: 20px;
     border-radius: 100% !important;
     z-index: 10;
+    margin-left: 3px;
+}
+.round3 {
+    background-color: var(--gris);
+    width: 15px;
+    height: 15px;
+    border-radius: 100% !important;
+    z-index: 10;
+    margin-left: 6px;
+}
+
+#mySidenav {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+}
+
+#mySidenav a {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+}
+
+/* Position sur un cercle à 120° d’écart + rotation du texte inversée */
+
+#about {
+    background-color: var(--vert);
+    animation: rotateAbout 15s linear infinite;
+}
+
+#blog {
+    background-color: var(--beige);
+    animation: rotateBlog 15s linear infinite;
+}
+
+#projects {
+    background-color: var(--gris);
+    animation: rotateProjects 15s linear infinite;
+}
+
+/* Animation individuelle pour chaque bouton */
+@keyframes rotateAbout {
+    0% {
+        transform: rotate(0deg) translateX(125px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(125px) rotate(-360deg);
+    }
+}
+
+@keyframes rotateBlog {
+    0% {
+        transform: rotate(120deg) translateX(125px) rotate(-120deg);
+    }
+    100% {
+        transform: rotate(480deg) translateX(125px) rotate(-480deg);
+    }
+}
+
+@keyframes rotateProjects {
+    0% {
+        transform: rotate(240deg) translateX(125px) rotate(-240deg);
+    }
+    100% {
+        transform: rotate(600deg) translateX(125px) rotate(-600deg);
+    }
+}
+
+.quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 160px;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact li {
+    font-size: 16px;
+    font-weight: bold;
 }
