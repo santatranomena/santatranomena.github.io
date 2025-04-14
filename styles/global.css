@@ -1,5 +1,16 @@
 :root {
-    --gris:#b6bec1;
-    --beige: #F2E7BF;
-    --vert : #95a595;
+    --primary-color: #5aff15;
+    --primary-light: rgba(90, 255, 21, 0.1);
+    --dark-bg: #111111;
+    --dark-card: #1a1a1a;
+    --text-light: #ffffff;
+    --text-gray: #a0a0a0;
+    --border-radius: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
