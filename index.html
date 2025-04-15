@@ -10,21 +10,21 @@
         <link rel="stylesheet" href="./styles/global.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     </head>
     <body>
+        <!--Page d'accueil-->
         <header>
             <nav>
                 <div class="nav-left">
-                    <a href="#" class="nav-link">A propos</a>
+                    <a href="#about" class="nav-link">A propos</a>
                     <a href="#" class="nav-link">Mon parcours</a>
                 </div>
                 <div class="logo">
-                    <div class="logo-icon"></div>
-                    <span>Creatix</span>
+                    <div class="logo-icon" id="icon-1"></div>
+                    <div class="logo-icon" id="icon-2"></div>
+                    <div class="logo-icon" id="icon-3"></div>
                 </div>
                 <div class="nav-right">
                     <a href="#" class="nav-link">Projets</a>
@@ -34,14 +34,16 @@
             </nav>
         </header>
         <main>
+            <!--Section Présentation-->
             <section class="hero">
+                <title>Accueil Portfolio - ANDRIAMPANIRY Santatra Nomena</title>
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1>Bonjour, je suis ANDRIAMPANIRY Santatra Nomena</h1>
+                        <p><h2>Bonjour <span>,</span> je suis</h2> <br> <h1>ANDRIAMPANIRY Santatra Nomena</h1></p>
                         <p>Community Manager / Développeuse Front-end</p>
                         <div class="hero-buttons">
                             <button class="primary-btn">En savoir plus</button>
-                            <button class="secondary-btn">Me contacter</button>
+                            <button class="secondary-btn">Une collaboration ?</button>
                         </div>
                     </div>
                     <div class="hero-image-container">
@@ -62,6 +64,66 @@
                     </div>
                 </div>
             </section>
+
+            <!--Section A propos-->
+            <section class="services" id="about">
+            <title>A propos - ANDRIAMPANIRY Santatra Nomena / Portfolio</title>
+            <div class="section-label">
+                <span>A Propos</span> 
+            </div>
+            <div class="about-content">
+                <div class="about-list">
+                    <div class="about-item">
+                        <span class="service-number"><i class="fa-solid fa-user"></i></span>
+                        <span class="service-name">ANDRIAMPANIRY Santatra Nomena</span>
+                    </div>
+                    <div class="about-item">
+                        <span class="service-number"><i class="fa-solid fa-calendar"></i></span>
+                        <span class="service-name">23 Octobre 2002</span>
+                    </div>
+                    <div class="about-item">
+                        <span class="service-number"><i class="fa-solid fa-location-dot"></i></span>
+                        <span class="service-name">Soanierana Andrainjato - Fianarantsoa</span>
+                    </div>
+                    <div class="about-item">
+                        <span class="service-number"><i class="fa-solid fa-envelope"></i></span>
+                        <span class="service-name">andriampanirynomena@gmail.com</span>
+                    </div>
+                    <div class="about-item">
+                        <span class="service-number"><i class="fas fa-phone"></i> </span>
+                        <a href="tel:+261332570745" class="service-name" id="tel">+261332570745</a>
+                    </div>
+                    <div class="about-item">
+                        <span class="service-name">
+                            <ul class="social-links">
+                                <li><a href=""><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
+                                <li><a href=""><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                                <li><a href=""><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                                <li><a href=""><i class="fab fa-github"></i> Github</a></li>
+                            </ul>
+                    </span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p> Passionnée par le numérique depuis mon enfance, j’ai naturellement orienté ma carrière vers le domaine du digital . En combinant ma curiosité pour la communication et le web design, j’ai su me construire un univers mêlant créativité et stratégie à la croisée de la technique et de l’humain.</b><br><br>
+                        En tant que <b>Community Manager</b>, j’aime créer des liens authentiques entre les marques et leur public, en misant sur des messages sincères, une identité forte, et une stratégie de contenu cohérente. Côté <b>développement</b>, je prends plaisir à donner vie aux interfaces accessibles à tout le monde.<br><br>
+                        Aujourd’hui, je continue d’explorer cet univers en perpétuelle évolution, toujours animée par l’envie d’apprendre, de créer, et de donner du sens à chaque projet.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="img">
+                        <img src="/assets/noms.jpg" alt="ANDRIAMPANIRY Santatra Nomena" name="ANDRIAMPANIRY Santatra Nomena">
+                    </div>
+                    <div class="expert-badge">
+                        <p>Pour moi, animer une communauté, ce n’est pas simplement transmettre des messages importants — c’est surtout savoir partager une vision, une passion, une énergie. C’est écouter, échanger, inspirer… et avancer ensemble. </p>
+                        <div class="meet-expert">
+                            <span>Consulter mes projets</span>
+                            <span class="expert-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         </main>
     </body>
 </html>

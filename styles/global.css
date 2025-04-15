@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #5aff15;
-    --primary-light: rgba(90, 255, 21, 0.1);
+    --primary-color: #8f2d56;
+    --primary-light: color-mix(in srgb, var(--primary-color) 30%, black);
     --dark-bg: #111111;
     --dark-card: #1a1a1a;
     --text-light: #ffffff;
@@ -13,4 +13,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
