@@ -66,7 +66,7 @@ nav {
 }
 
 .logo-icon::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 30px;
     height: 30px;
@@ -103,7 +103,7 @@ nav {
 }
 
 .hero::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 75px;
     height: 75px;
@@ -318,7 +318,7 @@ nav {
     color: var(--text-light);
 }
 
-#tel:hover{
+#tel:hover {
     color: var(--primary-color);
 }
 
@@ -328,11 +328,11 @@ nav {
 
 .about-image {
     flex: 1.5;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        border-radius: var(--border-radius);
-        overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .about-image .img {
@@ -413,4 +413,152 @@ nav {
 .social-links i {
     font-size: 18px;
     color: var(--primary-color);
+}
+
+/*Section parcours*/
+.parcours {
+    max-width: 1200px;
+    margin: 100px auto;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding:0px 0px 0px 65px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.progress-step {
+    background-color: var(--text-gray);
+    color: var(--text-light);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.progress-step:hover {
+    background-color: var(--primary-color);
+}
+
+.progress-step.active {
+    background-color: var(--primary-color) !important;
+    transform: scale(1.1);
+}
+
+.progress-line {
+    flex-grow: 1;
+    height: 4px;
+    background-color: var(--text-gray);
+}
+
+.parcours-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.parcours-content .content {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    animation: fadeIn 0.4s ease;
+}
+
+.parcours-content .content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cache la version mobile sur desktop */
+.parcours-mobile {
+    display: none;
+}
+
+.experience-info ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.experience-info ul li{
+    background-color: var(--text-gray);
+    border-radius: 25px;
+    padding: 10px;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.experience-info ul li h3{
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+.experience-card .title {
+    padding:10px 0px;
+}
+
+.niveau-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* ou un fond léger si tu préfères */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.niveau-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.niveau-info {
+    flex: 1;
+}
+
+.team-social a {
+    color: var(--text-light);
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.team-social {
+    padding: 15px;
 }

@@ -1,0 +1,241 @@
+/* RESPONSIVE DESIGN */
+
+/* Pour les tablettes (≤ 992px) */
+@media screen and (max-width: 992px) {
+
+    /* Masquer la barre de navigation par défaut sur mobile et tablette */
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+    /* Afficher le menu lorsque le logo est cliqué */
+    .nav-left.active,
+    .nav-right.active {
+        display: flex;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 30px;
+    }
+
+    .about-image {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-image .img {
+        height: 180px;
+        width: 45%;
+    }
+
+    .services {
+        padding: 30px 20px;
+    }
+
+    .section-label {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        height: auto;
+        width: fit-content;
+        padding: 8px 15px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .parcours {
+        display: none;
+    }
+
+    .parcours-mobile {
+        display: block;
+    }
+
+    .parcours-mobile .swiper-slide {
+        background-color: rgba(26, 26, 26, 0.8);
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .parcours-mobile .progress-step {
+        background-color: var(--primary-color);
+        color: var(--text-light);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 10px auto;
+    }
+
+    .parcours-mobile .content {
+        font-size: 1.1rem;
+    }
+
+    .swiper-pagination {
+        margin-top: 30px;
+        position: relative !important;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: var(--primary-color) !important;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--primary-light);
+    }
+}
+
+.nav-right.show,
+.nav-left.show {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Pour les mobiles (≤ 576px) */
+@media screen and (max-width: 576px) {
+
+    /* Masquer la barre de navigation par défaut sur mobile et tablette */
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+    /* Afficher le menu lorsque le logo est cliqué */
+    .nav-left.show,
+    .nav-right.show {
+        display: flex;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-image-container {
+        height: 300px;
+    }
+
+    .about-image .img {
+        width: 100%;
+    }
+
+    .nav-left,
+    .nav-right {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .parcours {
+        display: none;
+    }
+
+    .parcours-mobile {
+        display: block;
+    }
+
+    .parcours-mobile .swiper-slide {
+        background-color: rgba(26, 26, 26, 0.8);
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .parcours-mobile .progress-step {
+        background-color: var(--primary-color);
+        color: var(--text-light);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 10px auto;
+    }
+
+    .parcours-mobile .content {
+        font-size: 1.1rem;
+    }
+
+    .section-label {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        height: auto;
+        width: fit-content;
+        padding: 8px 15px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .about-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .social-links {
+        gap: 15px 20px;
+    }
+
+    .swiper-pagination {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        position: relative !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .experience-info ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .niveau-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .niveau-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .niveau-image img {
+        max-width: 150px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .experience-info ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

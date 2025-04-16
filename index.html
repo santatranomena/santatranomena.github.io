@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            ANDRIAMPANIRY Santatra Nomena / Portfolio Développeuse Front-End
-        </title>
-        <link rel="stylesheet" href="./styles/index.css" />
-        <link rel="stylesheet" href="./styles/global.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    </head>
-    <body>
-        <!--Page d'accueil-->
-        <header>
-            <nav>
-                <div class="nav-left">
-                    <a href="#about" class="nav-link">A propos</a>
-                    <a href="#" class="nav-link">Mon parcours</a>
-                </div>
-                <div class="logo">
-                    <div class="logo-icon" id="icon-1"></div>
-                    <div class="logo-icon" id="icon-2"></div>
-                    <div class="logo-icon" id="icon-3"></div>
-                </div>
-                <div class="nav-right">
-                    <a href="#" class="nav-link">Projets</a>
-                    <a href="#" class="nav-link">Services</a>
-                    <button class="contact-btn">Contact</button>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <!--Section Présentation-->
-            <section class="hero">
-                <title>Accueil Portfolio - ANDRIAMPANIRY Santatra Nomena</title>
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <p><h2>Bonjour <span>,</span> je suis</h2> <br> <h1>ANDRIAMPANIRY Santatra Nomena</h1></p>
-                        <p>Community Manager / Développeuse Front-end</p>
-                        <div class="hero-buttons">
-                            <button class="primary-btn">En savoir plus</button>
-                            <button class="secondary-btn">Une collaboration ?</button>
-                        </div>
-                    </div>
-                    <div class="hero-image-container">
-                        <div class="hero-image">
-                            <img
-                                src="/assets/nomena.jpg"
-                                alt="ANDRIAMPANIRY Santatra Nomena"
-                                name="ANDRIAMPANIRY Santatra Nomena"
-                                class="main-image"
-                            />
-                        </div>
-                        <div class="experience-badge">
-                            <div class="green-accent accent-3">Gérer</div>
-                            </div>
-                        </div>
-                        <div class="green-accent accent-1">Innover</div>
-                        <div class="green-accent accent-2">Créer</div>
-                    </div>
-                </div>
-            </section>
 
-            <!--Section A propos-->
-            <section class="services" id="about">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        ANDRIAMPANIRY Santatra Nomena / Portfolio Développeuse Front-End
+    </title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!--Page d'accueil-->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="#about" class="nav-link">A propos</a>
+                <a href="#parcours" class="nav-link">Mon parcours</a>
+            </div>
+            <script src="/js/menumobile.js"></script>
+            <div class="logo" onclick="toggleMenu()">
+                <div class="logo-icon" id="icon-1"></div>
+                <div class="logo-icon" id="icon-2"></div>
+                <div class="logo-icon" id="icon-3"></div>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="nav-link">Projets</a>
+                <a href="#" class="nav-link">Services</a>
+                <button class="contact-btn">Contact</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Section Présentation-->
+        <section class="hero">
+            <title>Accueil Portfolio - ANDRIAMPANIRY Santatra Nomena</title>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p>
+                    <h2>Bonjour <span>,</span> je suis</h2> <br>
+                    <h1>ANDRIAMPANIRY Santatra Nomena</h1>
+                    </p>
+                    <p>Community Manager / Développeuse Front-end</p>
+                    <div class="hero-buttons">
+                        <button class="primary-btn">En savoir plus</button>
+                        <button class="secondary-btn">Une collaboration ?</button>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        <img src="/assets/nomena.jpg" alt="ANDRIAMPANIRY Santatra Nomena"
+                            name="ANDRIAMPANIRY Santatra Nomena" class="main-image" />
+                    </div>
+                    <div class="experience-badge">
+                        <div class="green-accent accent-3">Gérer</div>
+                    </div>
+                    <div class="green-accent accent-1">Innover</div>
+                    <div class="green-accent accent-2">Créer</div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--Section A propos-->
+        <section class="services" id="about">
             <title>A propos - ANDRIAMPANIRY Santatra Nomena / Portfolio</title>
             <div class="section-label">
-                <span>A Propos</span> 
+                <span>A Propos</span>
             </div>
             <div class="about-content">
                 <div class="about-list">
@@ -101,21 +109,31 @@
                                 <li><a href=""><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
                                 <li><a href=""><i class="fab fa-github"></i> Github</a></li>
                             </ul>
-                    </span>
+                        </span>
                     </div>
                 </div>
                 <div class="about-text">
-                    <p> Passionnée par le numérique depuis mon enfance, j’ai naturellement orienté ma carrière vers le domaine du digital . En combinant ma curiosité pour la communication et le web design, j’ai su me construire un univers mêlant créativité et stratégie à la croisée de la technique et de l’humain.</b><br><br>
-                        En tant que <b>Community Manager</b>, j’aime créer des liens authentiques entre les marques et leur public, en misant sur des messages sincères, une identité forte, et une stratégie de contenu cohérente. Côté <b>développement</b>, je prends plaisir à donner vie aux interfaces accessibles à tout le monde.<br><br>
-                        Aujourd’hui, je continue d’explorer cet univers en perpétuelle évolution, toujours animée par l’envie d’apprendre, de créer, et de donner du sens à chaque projet.
+                    <p> Passionnée par le numérique depuis mon enfance, j’ai naturellement orienté ma carrière vers le
+                        domaine du digital . En combinant ma curiosité pour la communication et le web design, j’ai su
+                        me construire un univers mêlant créativité et stratégie à la croisée de la technique et de
+                        l’humain.</b><br><br>
+                        En tant que <b>Community Manager</b>, j’aime créer des liens authentiques entre les marques et
+                        leur public, en misant sur des messages sincères, une identité forte, et une stratégie de
+                        contenu cohérente. Côté <b>développement</b>, je prends plaisir à donner vie aux interfaces
+                        accessibles à tout le monde.<br><br>
+                        Aujourd’hui, je continue d’explorer cet univers en perpétuelle évolution, toujours animée par
+                        l’envie d’apprendre, de créer, et de donner du sens à chaque projet.
                     </p>
                 </div>
                 <div class="about-image">
                     <div class="img">
-                        <img src="/assets/noms.jpg" alt="ANDRIAMPANIRY Santatra Nomena" name="ANDRIAMPANIRY Santatra Nomena">
+                        <img src="/assets/noms.jpg" alt="ANDRIAMPANIRY Santatra Nomena"
+                            name="ANDRIAMPANIRY Santatra Nomena">
                     </div>
                     <div class="expert-badge">
-                        <p>Pour moi, animer une communauté, ce n’est pas simplement transmettre des messages importants — c’est surtout savoir partager une vision, une passion, une énergie. C’est écouter, échanger, inspirer… et avancer ensemble. </p>
+                        <p>Pour moi, animer une communauté, ce n’est pas simplement transmettre des messages importants
+                            — c’est surtout savoir partager une vision, une passion, une énergie. C’est écouter,
+                            échanger, inspirer… et avancer ensemble. </p>
                         <div class="meet-expert">
                             <span>Consulter mes projets</span>
                             <span class="expert-arrow">→</span>
@@ -124,6 +142,407 @@
                 </div>
             </div>
         </section>
-        </main>
-    </body>
+
+        <!--Section Parcours-->
+        <script src="/js/index.js"></script>
+        <section class="parcours" id="parcours">
+            <div class="progress-container">
+                <div class="progress-step" onclick="showContent(1)">2022</div>
+                <div class="progress-line"></div>
+                <div class="progress-step" onclick="showContent(2)">2023</div>
+                <div class="progress-line"></div>
+                <div class="progress-step" onclick="showContent(3)">2024</div>
+                <div class="progress-line"></div>
+                <div class="progress-step" onclick="showContent(4)">2025</div>
+                <div class="progress-line"></div>
+                <div class="progress-step" onclick="showContent(8)">
+                    <i class="fa-solid fa-print"></i>
+                </div>
+            </div>
+
+            <div class="parcours-content">
+                <div class="content" id="content-1">
+                    <div class="niveau-card">
+                        <div class="niveau-image">
+                            <img src="/assets/EMIT-removebg-preview.png" alt="Logo EMIT Fianarantsoa">
+                        </div>
+                        <div class="niveau-info">
+                            <h3>L1 en Informatique</h3>
+                            <p>Année universitaire : 2021 - 2022</p>
+                            <p>Parcours : Développement d'Application Intranet et Internet</p>
+                            <p>Lieu : EMIT Fianarantsoa </p>
+                            <div class="team-social">
+                                <a href="https://www.emit.mg/accueil" class="social-icon">Visiter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="title">
+                            <h3>Expériences</h3>
+                        </div>
+                        <div class="experience-info">
+                            <ul>
+                                <li>
+                                    <h3>EMIHACK 1.0</h3>
+                                    <p>Mars 2022</p>
+                                    <p>Hackathon interne de l'EMIT</p>
+                                    <p>Présentatrice de projet - Team HEXAGO</p>
+                                </li>
+                                <li>
+                                    <h3>FRONTEND Awards</h3>
+                                    <p>Septembre 2022</p>
+                                    <p>Présentatrice de projet - Team HEXAGO</p>
+                                </li>
+                                <li>
+                                    <h3>Responsable Communication</h3>
+                                    <p>2021 - 2022</p>
+                                    <p>EMITECH (Emit MIanatra TECHnologie)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" id="content-2">
+                    <div class="niveau-card">
+                        <div class="niveau-image">
+                            <img src="/assets/EMIT-removebg-preview.png" alt="Logo EMIT Fianarantsoa">
+                        </div>
+                        <div class="niveau-info">
+                            <h3>L2 en Informatique</h3>
+                            <p>Année universitaire : 2022 - 2023</p>
+                            <p>Parcours : Développement d'Application Intranet et Internet</p>
+                            <p>Lieu : EMIT Fianarantsoa </p>
+                            <div class="team-social">
+                                <a href="https://www.emit.mg/accueil" class="social-icon">Visiter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="title">
+                            <h3>Expériences</h3>
+                        </div>
+                        <div class="experience-info">
+                            <ul>
+                                <li>
+                                    <h3>SUMMER CODE - Front End</h3>
+                                    <p>Octobre 2022</p>
+                                    <p>Créatrice de contenu(site web) / Dévéloppeuse Front-End - Team ED-DEV</p>
+                                </li>
+                                <li>
+                                    <h3>EMIHACK 2.0</h3>
+                                    <p>Mars 2023</p>
+                                    <p>Créatrice de contenu(site web) / Présentatrice de projet - Team Hexago</p>
+                                </li>
+                                <li>
+                                    <h3>Stage Pofessionnelle</h3>
+                                    <p>Juillet - Septembre 2023</p>
+                                    <p>INSTAT Fianarantsoa</p>
+                                    <p>Thème: Conception et Réalisation d'une application de Gestion des Fichiers
+                                        d'Etablissements</p>
+                                    <p>Techno : NextJs - Angular JS</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" id="content-3">
+                    <div class="niveau-card">
+                        <div class="niveau-image">
+                            <img src="/assets/EMIT-removebg-preview.png" alt="Logo EMIT Fianarantsoa">
+                        </div>
+                        <div class="niveau-info">
+                            <h3>L3 en Informatique</h3>
+                            <p>Année universitaire : 2023 - 2024</p>
+                            <p>Parcours : Développement d'Application Intranet et Internet</p>
+                            <p>Lieu : EMIT Fianarantsoa </p>
+                            <div class="team-social">
+                                <a href="https://www.emit.mg/accueil" class="social-icon">Visiter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="title">
+                            <h3>Expériences</h3>
+                        </div>
+                        <div class="experience-info">
+                            <ul>
+                                <li>
+                                    <h3>Vice - Présidente AEEMIT</h3>
+                                    <p>2024</p>
+                                </li>
+                                <li>
+                                    <h3>Stage Professionnelle</h3>
+                                    <p>Juillet - Octobre 2024</p>
+                                    <p>IHESS - Université de Vakinankaratra</p>
+                                    <p>Thème : Conceptione t réalisation d'une application de suivi et de gestion des
+                                        matières</p>
+                                    <p>Techno : SpringBoot - Angular JS</p>
+                                    <p> Obtention du diplome de Licence en Informatique</p>
+                                </li>
+                                <li>
+                                    <h3>Stage CDD</h3>
+                                    <p>Octobre - Janvier 2025</p>
+                                    <p>Freelance - Ankofafa Fianrantsoa</p>
+                                    <p>Développement Front - End </p>
+                                    <p>Prestashop - PHP</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" id="content-4">
+                    <div class="niveau-card">
+                        <div class="niveau-image">
+                            <img src="/assets/EMIT-removebg-preview.png" alt="Logo EMIT Fianarantsoa">
+                        </div>
+                        <div class="niveau-info">
+                            <h3>M1 en Information , Communication et Multimédia</h3>
+                            <p>Année universitaire : 2024 - 2025</p>
+                            <p>Parcours : Communication Numérique et Mangement de Projet</p>
+                            <p>Lieu : EMIT Fianarantsoa </p>
+                            <div class="team-social">
+                                <a href="https://www.emit.mg/accueil" class="social-icon">Visiter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="title">
+                            <h3>Expériences</h3>
+                        </div>
+                        <div class="experience-info">
+                            <ul>
+                                <li>
+                                    <h3>Responsable Communication</h3>
+                                    <p>2022 - à ce jour</p>
+                                    <p>EMITDANCE (Club de Danse de l'EMIT)</p>
+                                </li>
+                                <li>
+                                    <h3>Comité de Pilotage</h3>
+                                    <p>Janvier 2025 - à ce jour</p>
+                                    <p>IHESS - Université de Vakinankaratra</p>
+                                    <p>Responsable développement du plateforme numérique</p>
+                                    <p>Techno : Codeigniter 4 - Angular JS</p>
+                                </li>
+                                <li>
+                                    <h3>CEO Lucky Store</h3>
+                                    <p>Une petite entreprise de vente d'articles importées</p>
+                                    <p>Boutique en ligne</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" id="content-8">🖨️ Impression du parcours</div>
+            </div>
+            <div class="section-label">
+                <span>Parcours</span>
+            </div>
+        </section>
+
+        <!-- Version mobile (Swiper) -->
+        <section class="parcours-mobile" id="parcours">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="progress-step">2022</div>
+                        <div class="content">
+                            <div class="content" id="content-1">
+                                <div class="niveau-card">
+                                    <div class="niveau-image">
+                                        <img src="/assets/EMIT-removebg-preview.png" alt="Logo EMIT Fianarantsoa">
+                                    </div>
+                                    <div class="niveau-info">
+                                        <h3>L1 en Informatique</h3>
+                                        <p>Année universitaire : 2021 - 2022</p>
+                                        <p>Parcours : Développement d'Application Intranet et Internet</p>
+                                        <p>Lieu : EMIT Fianarantsoa </p>
+                                        <div class="team-social">
+                                            <a href="https://www.emit.mg/accueil" class="social-icon">Visiter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience-card">
+                                    <div class="title">
+                                        <h3>Expériences</h3>
+                                    </div>
+                                    <div class="experience-info">
+                                        <ul>
+                                            <li>
+                                                <h3>EMIHACK 1.0</h3>
+                                                <p>Mars 2022</p>
+                                                <p>Hackathon interne de l'EMIT</p>
+                                                <p>Présentatrice de projet - Team HEXAGO</p>
+                                            </li>
+                                            <li>
+                                                <h3>FRONTEND Awards</h3>
+                                                <p>Septembre 2022</p>
+                                                <p>Présentatrice de projet - Team HEXAGO</p>
+                                            </li>
+                                            <li>
+                                                <h3>Responsable Communication</h3>
+                                                <p>2021 - 2022</p>
+                                                <p>EMITECH (Emit MIanatra TECHnologie)</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="progress-step">2023</div>
+                        <div class="content">
+                            <div class="niveau-card">
+                                <div class="niveau-image">
+                                    <img src="/assets/EMIT-removebg-preview.png" alt="Logo EMIT Fianarantsoa">
+                                </div>
+                                <div class="niveau-info">
+                                    <h3>L2 en Informatique</h3>
+                                    <p>Année universitaire : 2022 - 2023</p>
+                                    <p>Parcours : Développement d'Application Intranet et Internet</p>
+                                    <p>Lieu : EMIT Fianarantsoa </p>
+                                    <div class="team-social">
+                                        <a href="https://www.emit.mg/accueil" class="social-icon">Visiter</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience-card">
+                                <div class="title">
+                                    <h3>Expériences</h3>
+                                </div>
+                                <div class="experience-info">
+                                    <ul>
+                                        <li>
+                                            <h3>SUMMER CODE - Front End</h3>
+                                            <p>Octobre 2022</p>
+                                            <p>Créatrice de contenu(site web) / Dévéloppeuse Front-End - Team ED-DEV</p>
+                                        </li>
+                                        <li>
+                                            <h3>EMIHACK 2.0</h3>
+                                            <p>Mars 2023</p>
+                                            <p>Créatrice de contenu(site web) / Présentatrice de projet - Team Hexago
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h3>Stage Pofessionnelle</h3>
+                                            <p>Juillet - Septembre 2023</p>
+                                            <p>INSTAT Fianarantsoa</p>
+                                            <p>Thème: Conception et Réalisation d'une application de Gestion des
+                                                Fichiers
+                                                d'Etablissements</p>
+                                            <p class="tech">Techno : NextJs - Angular JS</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="progress-step">2024</div>
+                        <div class="content">
+                            <div class="niveau-card">
+                                <div class="niveau-image">
+                                    <img src="/assets/EMIT-removebg-preview.png" alt="Logo EMIT Fianarantsoa">
+                                </div>
+                                <div class="niveau-info">
+                                    <h3>L3 en Informatique</h3>
+                                    <p>Année universitaire : 2023 - 2024</p>
+                                    <p>Parcours : Développement d'Application Intranet et Internet</p>
+                                    <p>Lieu : EMIT Fianarantsoa </p>
+                                    <div class="team-social">
+                                        <a href="https://www.emit.mg/accueil" class="social-icon">Visiter</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience-card">
+                                <div class="title">
+                                    <h3>Expériences</h3>
+                                </div>
+                                <div class="experience-info">
+                                    <ul>
+                                        <li>
+                                            <h3>Vice - Présidente AEEMIT</h3>
+                                            <p>2024</p>
+                                        </li>
+                                        <li>
+                                            <h3>Stage Professionnelle</h3>
+                                            <p>Juillet - Octobre 2024</p>
+                                            <p>IHESS - Université de Vakinankaratra</p>
+                                            <p>Thème : Conceptione t réalisation d'une application de suivi et de
+                                                gestion des
+                                                matières</p>
+                                            <p class="tech">Techno : SpringBoot - Angular JS</p>
+                                            <p> Obtention du diplome de Licence en Informatique</p>
+                                        </li>
+                                        <li>
+                                            <h3>Stage CDD</h3>
+                                            <p>Octobre - Janvier 2025</p>
+                                            <p>Freelance - Ankofafa Fianrantsoa</p>
+                                            <p>Développement Front - End </p>
+                                            <p>Prestashop - PHP</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="progress-step">2025</div>
+                        <div class="content">
+                            <div class="niveau-card">
+                                <div class="niveau-image">
+                                    <img src="/assets/EMIT-removebg-preview.png" alt="Logo EMIT Fianarantsoa">
+                                </div>
+                                <div class="niveau-info">
+                                    <h3>M1 en Information , Communication et Multimédia</h3>
+                                    <p>Année universitaire : 2024 - 2025</p>
+                                    <p>Parcours : Communication Numérique et Mangement de Projet</p>
+                                    <p>Lieu : EMIT Fianarantsoa </p>
+                                    <div class="team-social">
+                                        <a href="https://www.emit.mg/accueil" class="social-icon" target="_blank" rel="noopener noreferrer">Visiter</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience-card">
+                                <div class="title">
+                                    <h3>Expériences</h3>
+                                </div>
+                                <div class="experience-info">
+                                    <ul>
+                                        <li>
+                                            <h3>Responsable Communication</h3>
+                                            <p>2022 - à ce jour</p>
+                                            <p>EMITDANCE (Club de Danse de l'EMIT)</p>
+                                        </li>
+                                        <li>
+                                            <h3>Comité de Pilotage</h3>
+                                            <p>Janvier 2025 - à ce jour</p>
+                                            <p>IHESS - Université de Vakinankaratra</p>
+                                            <p>Responsable développement du plateforme numérique</p>
+                                            <p class="tech">Techno : Codeigniter 4 - Angular JS</p>
+                                        </li>
+                                        <li>
+                                            <h3>CEO Lucky Store</h3>
+                                            <p>Une petite entreprise de vente d'articles importées</p>
+                                            <p>Boutique en ligne</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="progress-step"><i class="fa-solid fa-print"></i></div>
+                        <div class="content">🖨️ Impression du parcours</div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+         
+    </main>
+</body>
+
 </html>
